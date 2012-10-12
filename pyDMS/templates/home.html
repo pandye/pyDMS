@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}DMS{% endblock %}
+{%block container%}
+                <table>
+                    <tr>
+                        <th style="width: 50px;"></th>
+                        <th style="width: 520px;">Name of Document</th>
+                        <th style="width: 100px;">Size</th>
+                        <th style="width: 250px;">Uploaded</th>
+                    </tr>
+                    {% if documents %}
+                    {% for document in documents %}
+                    <form method="post" action=".">
+                        {%csrf_token%}
+                    <tr>
+                        <td><input type="checkbox" value="{{document.id}}" name="t" /></td>
+                        <td><a href="{{document.doc.name}}">{{ document.docName}}</a></td>
+                        <td>{{ document.doc.size}}</td>
+                        <td>{{ document.lastUpdated}}</td>
+                    </tr>
+                    {% endfor %}
+                   <input type="submit" value="Delete" style="" />
+                    </form>
+                    {% else %}
+                    Sorry! No Documents available.
+                {% endif %}
+                </table>
+{%endblock%}

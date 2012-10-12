@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="/site_media/css/main.css" type="text/css" />
+    </head>
+    <body>
+        <div class="page">
+            <div class="highest">
+                {%if user.username%}
+                        Welcome {{user.username}}!
+                        <a href="/logout/">Logout</a>
+                        {%else%}
+                        Welcome Guest!
+                        <a href="/login/">Login</a>
+                {%endif%}
+            </div>
+            <div class="header-top">
+                    <div class="content">
+                        <div class="menu-item" >
+                            <a href="/" style="text-decoration: none;color: white;display: block;">Home</a>
+                        </div>
+                        <div class="menu-item" >
+                            <a href="/upload" style="text-decoration: none;color: white;display: block;">Upload</a>
+                        </div>
+                        <div class="menu-item" >
+                            <a href="/" style="text-decoration: none;color: white;display: block;">Search</a>
+                        </div>
+                        <div class="menu-item" >
+                            <a href="/" style="text-decoration: none;color: white;display: block;">Setting</a>
+                        </div>
+                        <div class="menu-item" >
+                            <a href="/" style="text-decoration: none;color: white;display: block;">Help</a>
+                        </div>
+                    </div>
+                </div>
+            <div class="document-view">
+                {%block container%}{%endblock%}
+            </div>
+            <hr />
+        </div>
+    </body>
+</html>

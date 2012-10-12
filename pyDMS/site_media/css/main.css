@@ -1,0 +1,109 @@
+body{
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    background-color: #e3f4ed;
+    line-height: 16px;
+    margin-top: 0;
+}
+.page{
+    width: 976px;
+    background-color: #efefef;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+.highest{
+    height: 30px;
+    width: 976px;
+    text-align: right;
+    font-size: 14px;
+    padding-top: 5px;
+    font-weight: 700;
+}
+.header-top{
+    height: 64px;
+    width: 976px;
+    border-radius: 4px 4px 4px 4px;
+    background-color: #888888;
+}
+.content{
+    margin-left: 65px;
+    height: 64px;
+    width: 600px;
+}
+.menu-item{
+    float: left;
+    height: 64px;
+    width:100px;
+    text-align: center;
+    line-height: 60px;
+    font-size: large; 
+    color: white;
+}
+.menu-item:hover{
+    background-color: #88883d;
+}
+.document-view{
+    width:937px;
+    height: 400px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+th{
+    height: 35px;
+    font-size: 22px;
+    color: #ffffff;
+    font-family: Calibri;
+    border-style: inset;
+    background-color:cadetblue;
+}
+tr{
+    height: 25px;
+    border-style: inset;
+    background-color: lightsteelblue;
+}
+td{
+    text-align: center;
+    font-size: 15px;
+}
+.upload-form{
+    margin-top: 30px;
+    margin-left: 250px;
+    width:400px;
+    height: 120px;
+    border-style: groove;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+.upload-file{
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.login-form{
+    margin-top: 30px;
+    margin-left: 250px;
+    width:400px;
+    height: 130px;
+    border-style: groove;
+    font-size: 16px;
+    font-weight: bold;
+}
+#id_username{
+    margin-left: 22px;
+    width:200px;
+    height: 20px;
+}
+#id_password{
+    margin-left: 2px;
+    width:200px;
+    height: 20px;
+}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}

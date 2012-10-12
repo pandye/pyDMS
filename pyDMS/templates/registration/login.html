@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}DMS: Login{% endblock %}
+{%block container%}
+                <div class="login-form">
+                <form method="post" action=".">
+                        {% csrf_token %}
+                        <p><label for="id_username">User Id:</label>{{ form.username }}</p>
+                        <p><label for="id_password">Password:</label>{{ form.password }}</p>
+                        <input type="hidden" name="next" value="/" />
+                        <hr/>
+                        <input type="submit" value="Login" style="float: right"/>
+                </form>
+                </div>
+{%endblock%}
