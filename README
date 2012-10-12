@@ -1,0 +1,20 @@
+Welcome in pyDMS. This is a simple Django Document Management System.
+
+This need django 1.4 and sqlite3 db to make it run.
+
+This system include following features-
+1. Only registered user can access the system.
+2. User can upload any attachment.
+3. User can download those attachment.
+4. User can delete those attachment.
+
+Make the following changes to run this project-
+1.In pyDMS/settings.py, under DATABASE name put your absolute database path.
+2.In pyDMS/settings.py, change MEDIA_ROOT
+3. In pyDMS/settings.py, change TEMPLATE_DIR
+4. In DMS/views.py, under downloadPage module, change filename.
+After that run "manage.py reset DMS".
+And then run syncdb.
+Thats it!
+
+If you found any problem, feel free to ask me.
